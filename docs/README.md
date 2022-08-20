@@ -42,8 +42,7 @@ or use sudo  ##
 sudo -i
 OR directly login as root user if allowed:
 ssh root@server1.cyberciti.biz
->><br>
-<strong>Step # 2: Edit the my.cnf file</Strong><br>
+>><strong>Step # 2: Edit the my.cnf file</Strong><br>
 Once connected you need to edit the MySQL server configuration file my.cnf using a text editor such as vi:
 If you are using Debian/Ubuntu Linux file is located at /etc/mysql/my.cnf location.
 If you are using Red Hat Linux/Fedora/Centos Linux file is located at /etc/my.cnf location.
