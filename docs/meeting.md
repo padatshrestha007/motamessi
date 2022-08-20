@@ -33,6 +33,9 @@
 3. MD file ( show vs Markdown preview extenstion )
 4. Workbench ( show and help set up https://dev.mysql.com/downloads/workbench/)
 
+<strong>Discuss loggin, Naming conventions, documentation, commenting. </strong>
+Naming convention, java variable with entity, calss name, variable names, column name in db etc
+
 #### Programming
 
 1. OOP

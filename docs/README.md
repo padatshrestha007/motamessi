@@ -21,3 +21,12 @@ If error with getting dependency to go File-->settings-->build execution deploym
 ```
 <br>![](20220819062512.png)  
 # ...
+
+# Createing new spring project
+>> Go to https://start.spring.io/
+<br> Keep all defaults except the project metatdata, modify according to your needs.
+<br> Add depencies as in the picture ( do some research what they are for)
+<br>![](20220820051155.png)  
+<br>Click Generate to download the project template.
+
+#
