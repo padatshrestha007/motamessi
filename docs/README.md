@@ -88,7 +88,7 @@ OR
  service mysql-server restart<br>
 <Strong>Step # 5 Grant access to remote IP address</Strong>
 Connect to mysql server:
-$ mysql -u root -p mysql
+ mysql -u root -p mysql
 <br>
 Grant access to a new database
 If you want to add a new database called foo for user bar and remote IP 202.54.10.20 then you need to type the following commands at mysql> prompt:
