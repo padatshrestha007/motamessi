@@ -21,14 +21,14 @@ public class WebserviceApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception{
 		Employee employee = new Employee();
-		employee.setFirstName("Hazel");
-		employee.setLastName("balla");
+		employee.setFirstName("Sachin");
+		employee.setLastName("Gurung");
 		employee.setEmailId("hazel@gmail.com");
 		empRepo.save(employee);
 
 		Employee employee2 = new Employee();
-		employee2.setFirstName("JUna");
-		employee2.setLastName("balla");
+		employee2.setFirstName("Vibek");
+		employee2.setLastName("Shrestha");
 		employee2.setEmailId("junaballa@gmail.com");
 		empRepo.save(employee2);
 	}
