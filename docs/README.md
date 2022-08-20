@@ -33,7 +33,7 @@ If error with getting dependency to go File-->settings-->build execution deploym
 >>sudo ufw allow from 76.85.82.231 to any port 3306
 <strong>Connection to mysql in cloud or remote ubuntu from local machine</Strong>
 You need type the following commands which will allow remote connections to a mysql server.<br>
-<strong>Step # 1: Login Using SSH (if server is outside your data center)</strong><br>
+<strong>Step # 1: Login Using SSH (if server is outside your data center)</strong><br/>
 First, login over ssh to remote MySQL database server. You may need to login to your MySQL server as the root user:
 >>>ssh user@server1.cyberciti.biz
 login as the root using su or sudo ##
