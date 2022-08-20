@@ -33,7 +33,7 @@ If error with getting dependency to go File-->settings-->build execution deploym
 >>sudo ufw allow from 76.85.82.231 to any port 3306
 <strong>Connection to mysql in cloud or remote ubuntu from local machine</Strong>
 You need type the following commands which will allow remote connections to a mysql server.<br>
-<strong>Step # 1: Login Using SSH (if server is outside your data center)</strong><br/>
+<strong>Step # 1: Login Using SSH (if server is outside your data center)</strong><br><br>
 First, login over ssh to remote MySQL database server. You may need to login to your MySQL server as the root user:
 >>>ssh user@server1.cyberciti.biz
 login as the root using su or sudo ##
@@ -42,7 +42,7 @@ or use sudo  ##
 sudo -i
 OR directly login as root user if allowed:
 ssh root@server1.cyberciti.biz
->><strong>Step # 2: Edit the my.cnf file</Strong><br>
+>><strong>Step # 2: Edit the my.cnf file</Strong><br><br>
 Once connected you need to edit the MySQL server configuration file my.cnf using a text editor such as vi:
 If you are using Debian/Ubuntu Linux file is located at /etc/mysql/my.cnf location.
 If you are using Red Hat Linux/Fedora/Centos Linux file is located at /etc/my.cnf location.
@@ -50,7 +50,7 @@ If you are using FreeBSD you need to create a file /var/db/mysql/my.cnf location
 Edit the /etc/my.cnf using vi or nano
 vi /etc/my.cnf
 <Br><strong>
-Step # 3: Once file opened, locate line that read as follows</Strong><br>
+Step # 3: Once file opened, locate line that read as follows</Strong><br><br>
 [mysqld] 
 Make sure line skip-networking is commented (or remove line) and add following line
 >>>bind-address=YOUR-SERVER-IP
@@ -73,7 +73,7 @@ Where,
 bind-address: IP address to bind to.
 skip-networking : Do not listen for TCP/IP connections at all. All interaction with mysqld must be made via Unix sockets. This option is highly recommended for systems where only local requests are allowed. Since you need to allow remote connection this line should be removed from my.cnf or put it in comment state.
 <br><strong>
-Step# 4 Save and Close the file</Strong><br>
+Step# 4 Save and Close the file</Strong><br><br>
 If you are using Debian / Ubuntu Linux, type the following command to restart the mysql server:
  /etc/init.d/mysql restart
 OR
@@ -86,7 +86,7 @@ If you are using FreeBSD, type the following command to restart the mysql server
  /usr/local/etc/rc.d/mysql-server restart
 OR
  service mysql-server restart<br>
-<Strong>Step # 5 Grant access to remote IP address</Strong>
+<Strong>Step # 5 Grant access to remote IP address</Strong><br>
 Connect to mysql server: mysql -u root -p mysql<br>
 Grant access to a new database
 If you want to add a new database called foo for user bar and remote IP 202.54.10.20 then you need to type the following commands at mysql> prompt:
@@ -96,10 +96,10 @@ How Do I Grant Access To An Existing Database?
 Let us assume that you are always making connection from remote IP called 202.54.10.20 for database called webdb for user webadmin, To grant access to this IP address type the following command At mysql> prompt for existing database, enter:
 mysql> update db set Host='202.54.10.20' where Db='webdb';
 mysql> update user set Host='202.54.10.20' where user='webadmin';<br>
-<Strong>Step # 6: Logout of MySQL</Strong>
+<Strong>Step # 6: Logout of MySQL</Strong><br>
 Type exit command to logout mysql:
 mysql> exit<br>
-<Strong>Step # 7: Open port 3306</Strong>
+<Strong>Step # 7: Open port 3306</Strong><br>
 You need to open TCP port 3306 using iptables or BSD pf firewall.<br>
 A sample iptables rule to open Linux iptables firewall
 /sbin/iptables -A INPUT -i eth0 -p tcp --destination-port 3306 -j ACCEPT
