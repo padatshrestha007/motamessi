@@ -56,4 +56,8 @@ CREATE USER 'motamessi'@'76.85.82.231' IDENTIFIED BY '5achinG00$7';
 GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'motamessi'@'76.85.82.231' WITH GRANT OPTION;
 <br>Example
 ![](20220820172947.png)  
-For sachin, create motamessi@(his_public_IP_address)
+<br>For sachin, create motamessi@(his_public_IP_address)
+<br>Also allow ufw 
+<br>sudo ufw allow from remote_IP_address to any port 3306
+<br>OR
+<br>sudo ufw allow 3306
