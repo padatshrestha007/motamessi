@@ -34,4 +34,6 @@ public class Player {
     private String cell;
 
     private String email;
+    @Column(name = "number_of_goal")
+    private int numberOfGoals;
 }

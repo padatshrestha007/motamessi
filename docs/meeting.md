@@ -1,6 +1,5 @@
 <hr/>
 # java-01 : 08.13.2022
-<hr/>
 ### ask sachin
 1. What is Construtor
 2. What is POM
@@ -23,7 +22,6 @@
 
 <hr/>
 # java-02 : 08.20.2022
-<hr/>
 ### talk about
 
 #### Tools
@@ -47,10 +45,12 @@ Naming convention, java variable with entity, calss name, variable names, column
 
 <hr/>
 # java-03 : 08.27.2022
-<hr/>
-### talk about
+### Talk about
+#### Database 
+1. ORM
+2. JDBC
 
-#### Advanced topics
+#### Advanced topics (30 mins)
 
 1. Dependency Injection
 2. Garbage collection
@@ -58,26 +58,32 @@ Naming convention, java variable with entity, calss name, variable names, column
 4. Best Practices
 5. Threads
 
-#### Project Planning
-1. Define UI
-2. Set up spring boot project with react
-3. Create user stories
+
+#### Project Planning (90 mins)
+
+0. Set Sachin up with remote mysql connection my linode server.
+1. What is spring boot?
+2. How to create spring boot rest mvc template (https://start.spring.io/)
+3. Show the spring boot project structure and best practices ( creating model view and contrller packages)
 
 
 <hr/>
 # java-04 : 09.03.2022
-<hr/>
 
-...
+1. Define UI (20 mins)
+2. Set up spring boot project with react
+3. Create user stories
 
 <hr/>
 # java-05 : 09.10.2022
-<hr/>
+>><br><strong>Super duper advanced</strong></br> 
+Talk about CI / CD pipe line 
+Talk about container and kubernetes
+Talk about 
 
-...
+
 
 <hr/>
 # java-06 : 09.17.2022
 <hr/>
-
-...
+Assit in roadblocks...
