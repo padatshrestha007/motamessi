@@ -20,16 +20,16 @@ public class WebserviceApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception{
-//		Employee employee = new Employee();
-//		employee.setFirstName("Sachin");
-//		employee.setLastName("Gurung");
-//		employee.setEmailId("hazel@gmail.com");
-//		empRepo.save(employee);
-//
-//		Employee employee2 = new Employee();
-//		employee2.setFirstName("Vibek");
-//		employee2.setLastName("Shrestha");
-//		employee2.setEmailId("junaballa@gmail.com");
-//		empRepo.save(employee2);
+		Employee employee = new Employee();
+		employee.setFirstName("Sachin");
+		employee.setLastName("Gurung");
+		employee.setEmailId("hazel@gmail.com");
+		empRepo.save(employee);
+
+		Employee employee2 = new Employee();
+		employee2.setFirstName("Vibek");
+		employee2.setLastName("Shrestha");
+		employee2.setEmailId("junaballa@gmail.com");
+		empRepo.save(employee2);
 	}
 }
