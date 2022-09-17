@@ -1,7 +1,7 @@
 # Set up shorcut keys
 >> ![](20220819054657.png)  
 # Setting up string boot rest api app
->>Download spring boot rest api template from https://spring.io/guides/gs/motamessi-webapi/
+>>Download spring boot rest api template from https://start.spring.io/
 Extract All, Open intellj and open the mvnw file inside \initial.
 If error with getting dependency to go File-->settings-->build execution deployment-->Maven and set the the maven home path to the downloaded and extracted maven template root <br>
 ![](20220818083411.png)  
