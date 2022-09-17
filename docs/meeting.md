@@ -36,21 +36,20 @@
 >>6. REST API</strong><br><br>
 
 # java-03 : 08.27.2022
-><strong>Talk about</strong><br><br>
-><strong> Database </strong><br><br>
+><strong>Talk about<br><br>Database </strong><br><br>
 >1. ORM
 >2. JDBC<br><br>
-><strong>Advanced topics (30 mins)</strong><br><br>
->1. Dependency Injection
->2. Garbage collection
->3. Desigin Patterns
->4. Best Practices
->5. Threads<br><br>
-><strong>Project Planning (90 mins)</strong><br><br>
->0. Set Sachin up with remote mysql connection my linode server.
->1. What is spring boot?
->2. How to create spring boot rest mvc template (https://start.spring.io/)
->3. Show the spring boot project structure and best practices ( creating model view and contrller packages)<br><br>
+>><strong>Advanced topics (30 mins)</strong><br><br>
+>>1. Dependency Injection
+>>2. Garbage collection
+>>3. Desigin Patterns
+>>4. Best Practices
+>>5. Threads<br><br>
+>>><strong>Project Planning (90 mins)</strong><br><br>
+>>>0. Set Sachin up with remote mysql connection my linode server.
+>>>1. What is spring boot?
+>>>2. How to create spring boot rest mvc template (https://start.spring.io/)
+>>>3. Show the spring boot project structure and best practices ( creating model view and contrller packages)<br><br>
 
 # java-04 : 09.03.2022
 
