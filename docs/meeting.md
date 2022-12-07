@@ -33,7 +33,7 @@
 >>3. Datastructure (List and Maps)
 >>4. Inheritance
 >>5. Recursive function
->>6. REST API</strong><br><br>
+
 
 # java-03 : 08.27.2022
 ><strong>Talk about<br><br>Database </strong><br><br>
@@ -50,6 +50,10 @@
 >>>1. What is spring boot?
 >>>2. How to create spring boot rest mvc template (https://start.spring.io/)
 >>>3. Show the spring boot project structure and best practices ( creating model view and contrller packages)<br><br>
+
+> ### REST API
+>>>1. Go over REST api http components
+
 
 # java-04 : 09.03.2022
 
