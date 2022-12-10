@@ -61,16 +61,28 @@
 2. Set up spring boot project with react
 3. Create user stories
 
-<hr/>
-# java-05 : 09.10.2022
->><br><strong>Super duper advanced</strong></br> 
+
+# java-05 : 12.11.2022
+>><br><strong>Full Stack</strong></br> 
+1. Talk about API. rest or hhtp vs dll or jar
+2. Talk about client server architecture
+3. Talk about client side app vs server side
+4. Show motamessi serverside
+5. Show motamessi client side
+1. Show Players database
+1. Show Players entity framework and controllers
+1. Create Players Stat db objects
+1. Create Player Contoller and entity models
+1. Create Player Stat UI
+1. Wire up onclick to display player stats ui on each player on players list
+
+Some advance stuff if time permist
+
 Talk about CI / CD pipe line 
 Talk about container and kubernetes
-Talk about 
 
 
 
-<hr/>
 # java-06 : 09.17.2022
 <hr/>
 Assit in roadblocks...
