@@ -51,7 +51,7 @@ Copyright (c) 2018 - mital_04
                   if (target.length) {
                     $('html,body').animate({
                       scrollTop: target.offset().top - 65,
-                      }, 1000);
+                      }, 300);
                       return false;
                   }
             }

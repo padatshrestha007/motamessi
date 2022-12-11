@@ -1,0 +1,22 @@
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS; 
+SET FOREIGN_KEY_CHECKS=0;   
+
+alter table `motamessi`.`players_stats`   
+add CONSTRAINT `fk_player_id`
+    FOREIGN KEY (`player_id`)
+    REFERENCES `motamessi`.`players` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+
+
+CREATE TABLE `players` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+   `first_name` varchar(255) DEFAULT NULL,
+   `last_name` varchar(255) DEFAULT NULL,
+   `gender` varchar(255) DEFAULT NULL,
+  `age` int NOT NULL,
+  `cell` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `number_of_goal` int DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
