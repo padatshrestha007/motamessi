@@ -58,7 +58,7 @@
 # java-04 : 09.03.2022
 
 1. Define UI (20 mins)
-2. Set up spring boot project with react
+2. Set up spring boot project with react `https://start.spring.io/`
 3. Create user stories
 
 

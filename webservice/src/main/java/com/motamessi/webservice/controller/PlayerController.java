@@ -26,18 +26,18 @@ public class PlayerController {
         if(newPlayer.getFirst()==null)
             player.setFirst(getRandomString());
         else
-            player.setFirst("Padat");
+            player.setFirst(newPlayer.getFirst());
         if(newPlayer.getLast()==null)
             player.setLast(getRandomString());
         else
-            player.setLast("Shrestha");
+            player.setLast(newPlayer.getLast());
         if(newPlayer.getAge()==0)
             player.setAge(40);
         else
             player.setAge(newPlayer.getAge());
 
         if(newPlayer.getGender()==null)
-            player.setGender("male");
+            player.setGender(newPlayer.getGender());
         else
             player.setGender(newPlayer.getGender());
 
@@ -71,6 +71,25 @@ public class PlayerController {
         return ResponseEntity.ok(player);
     }
 
+    @GetMapping
+    @RequestMapping("/api/v2/ramdom/getrandom")
+    public ResponseEntity<Integer> GetRamdomNum(){
+        int ramdomNum= getRandomNumber();
+        return ResponseEntity.ok(ramdomNum);
+    }
+
+    @PostMapping
+    @RequestMapping("/api/v1/player/update")
+    public ResponseEntity<String> updatePlayer(@RequestBody Player playerDetails)
+    {
+        long id = playerDetails.getId();
+        Player updatePlayer = playerRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("Employee not found"+id));
+        updatePlayer.setFirst(playerDetails.getFirst());
+        updatePlayer.setLast(playerDetails.getLast());
+        updatePlayer.setEmail(playerDetails.getEmail());
+        playerRepo.save(updatePlayer);
+        return ResponseEntity.ok("Updated!");
+    }
     private int getRandomNumber(){
         Random rand = new Random();
         int randNum = rand.nextInt(10) + 1;

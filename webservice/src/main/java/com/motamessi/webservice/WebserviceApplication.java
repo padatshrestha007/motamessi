@@ -25,9 +25,9 @@ public class WebserviceApplication implements CommandLineRunner {
 		Random rand = new Random();
 		int randomGoal = rand.nextInt(10) + 1;
 		Player player = new Player();
-		player.setFirst("Padat");
-		player.setLast("Shrestha");
-		player.setAge(40);
+		player.setFirst("Sachin");
+		player.setLast("Gurung");
+		player.setAge(30);
 		player.setGender("male");
 		player.setCell("2141555666");
 		player.setEmail("gpadat@gmail.com");
