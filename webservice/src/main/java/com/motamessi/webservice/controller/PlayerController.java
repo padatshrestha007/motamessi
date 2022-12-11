@@ -71,19 +71,6 @@ public class PlayerController {
         return ResponseEntity.ok(player);
     }
 
-    @PostMapping
-    @RequestMapping("/api/v1/player/update")
-    public ResponseEntity<String> updatePlayer(@RequestBody Player playerDetails)
-    {
-        long id = playerDetails.getId();
-        Player updatePlayer = playerRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("Employee not found"+id));
-        updatePlayer.setFirst(playerDetails.getFirst());
-        updatePlayer.setLast(playerDetails.getLast());
-        updatePlayer.setEmail(playerDetails.getEmail());
-        playerRepo.save(updatePlayer);
-        return ResponseEntity.ok("Updated!");
-    }
-
     private int getRandomNumber(){
         Random rand = new Random();
         int randNum = rand.nextInt(10) + 1;
