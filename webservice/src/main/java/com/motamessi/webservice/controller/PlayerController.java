@@ -65,7 +65,7 @@ public class PlayerController {
         return playerRepo.findAll();
     }
     @GetMapping
-    @RequestMapping("/api/v1/players/getbyid/{id}")
+    @RequestMapping("/api/v1/player/getbyid/{id}")
     public ResponseEntity<Player> getPlayerById(@PathVariable long id){
         Player player =  playerRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException("Player not found"+id));
         return ResponseEntity.ok(player);
