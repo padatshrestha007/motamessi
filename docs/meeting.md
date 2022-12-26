@@ -74,7 +74,10 @@
 1. Create Players Stat db objects
 1. Create Player Contoller and entity models
 1. Create Player Stat UI
-
+<hr/>
+# java-06 : 09.17.2022
+### Design tools
+``
 
 Some advance stuff if time permist
 
@@ -83,8 +86,3 @@ Talk about container and kubernetes
 
 #Practice Task
  Wire up onclick to display player stats ui on each player on players list
-
-
-# java-06 : 09.17.2022
-<hr/>
-Assit in roadblocks...

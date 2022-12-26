@@ -15,11 +15,11 @@ class PlayerComponent extends Component <{}, SoccerPlayers>
     };    
   }
   componentDidMount(){
-    fetch("http://localhost:54366/api/v1/players/getall")
+    fetch("http://localhost:54367/api/v1/players/getall")
     .then(res => res.json())
     .then(
       (res) => {  
-        console.log(res);
+        /////console.log(res);
         this.setState({
           players:res  
         });
@@ -42,6 +42,7 @@ class PlayerComponent extends Component <{}, SoccerPlayers>
             <th>Age</th>
             <th>Cell</th>
             <th>Email</th>
+            <th>Number Of Goals</th>
             <th></th>
             <th></th>
           </tr>
@@ -56,6 +57,7 @@ class PlayerComponent extends Component <{}, SoccerPlayers>
               <td>{player.age}</td>
               <td>{player.cell}</td>
               <td>{player.email}</td>
+              <td>{player.numberOfGoals}</td>
               <td><Button id="player.id" as="a" variant="danger" onClick={()=>alert('GEt stat for '+player.id)}> Show Stat </Button></td>
               <td>
               </td>

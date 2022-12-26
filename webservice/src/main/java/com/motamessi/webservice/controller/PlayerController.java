@@ -22,6 +22,7 @@ public class PlayerController {
     public ResponseEntity<String> createPlayer(@RequestBody Player newPlayer)
     {
 
+        //System.out.println(newPlayer.getFirst());
         Player player = new Player();
         if(newPlayer.getFirst()==null)
             player.setFirst(getRandomString());
