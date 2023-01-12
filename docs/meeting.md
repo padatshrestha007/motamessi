@@ -83,6 +83,14 @@ Some advance stuff if time permist
 
 Talk about CI / CD pipe line 
 Talk about container and kubernetes
-
 #Practice Task
  Wire up onclick to display player stats ui on each player on players list
+ 
+# java-07 : 12.30.2022
+###  Local Setup 
+
+# java-08 : 12.30.2022
+###  Add players component
+
+# java-08 : 12.30.2022
+### Host java app on windows
