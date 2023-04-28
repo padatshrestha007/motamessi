@@ -94,3 +94,8 @@ Talk about container and kubernetes
 
 # java-08 : 12.30.2022
 ### Host java app on windows
+
+
+# setup onprem(home) webserver
+## configure router to take port 80 requests
+## map port to vm in hyperv
